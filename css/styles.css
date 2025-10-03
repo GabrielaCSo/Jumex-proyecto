@@ -68,3 +68,65 @@ header {
     background-size: cover;
     background-position: center;
 }
+
+#introduccion {
+    min-height: calc(100vh - 40px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 80px;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.imagen-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+.texto-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    & img {
+        width: 450px;
+        margin-bottom: 5px;
+    }
+
+    & h3{
+        font-size: 20px;
+        white-space: pre-line;
+        margin-bottom: 15px;
+        color: var(--primary-color);
+    }
+
+    & p{
+        align-self: flex-start;
+        font-size: 23px;
+        line-height: 32px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    & a{
+        text-decoration: none;
+        font-size: 12px;
+        color: white;
+        background-color: var(--primary-color);
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out;
+        margin-right: 20px;
+    }
+    a:hover {
+        background-color: var(--third-color);
+    }
+}
